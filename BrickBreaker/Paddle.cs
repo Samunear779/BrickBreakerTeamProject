@@ -21,11 +21,11 @@ namespace BrickBreaker
         {
             if (direction == "left")
             {
-                x -= speed;
+                x -= speed*GameScreen.pSpeedMult;
             }
             if (direction == "right")
             {
-                x += speed;
+                x += speed* GameScreen.pSpeedMult;
             }
         }
     }
