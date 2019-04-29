@@ -34,7 +34,22 @@ namespace BrickBreaker
 
             if (ballRec.IntersectsWith(blockRec))
             {
-                ySpeed *= -1;
+                if (ySpeed == -2)
+                {
+                    ySpeed = 2;
+                }
+                else if (ySpeed == -3)
+                {
+                    ySpeed = 3;
+                }
+                else if (ySpeed == -4)
+                {
+                    ySpeed = 4;
+                }
+                else
+                {
+                    ySpeed = 6;
+                }
             }
 
             return blockRec.IntersectsWith(ballRec);
@@ -133,7 +148,22 @@ namespace BrickBreaker
             // Collision with top wall
             if (y <= 2)
             {
-                ySpeed *= -1;
+                if (ySpeed == -2) //if yspeed is *6* while colliding, move to the left that amount
+                {
+                    ySpeed = 2;
+                }
+                else if (xSpeed == -3)
+                {
+                    ySpeed = 3;
+                }
+                else if (xSpeed == -4)
+                {
+                    ySpeed = 4;
+                }
+                else
+                {
+                    ySpeed = 6;
+                }
             }
         }
 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level number ="1" name ="Level 1">
+  <brick x ="69" y ="47" hp ="1"/>
+  <brick x="107" y="47" hp="1"/>
+  <brick  x="69" y="90" hp="1"/>
+  <brick  x="107" y="90" hp="1"/>
+  <brick  x="69" y="137" hp="2"/>
+  <brick  x="107" y="137" hp="2"/>
+  <brick x="530" y="47" hp="1"/>
+  <brick x="608" y="47" hp="1"/>
+  <brick x="530" y="90" hp="1"/>
+  <brick x="608" y="90" hp="1"/>
+  <brick x="530" y="137" hp="2"/>
+  <brick x="608" y="137" hp="2"/>
+  <brick x="302" y="181" hp="3"/>
+  <brick x="386" y="181" hp="3"/>
+</level>
