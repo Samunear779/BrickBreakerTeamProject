@@ -58,36 +58,6 @@ namespace BrickBreaker
             }
         }
 
-        public void PowerUpTimer()
-        {
-            if (GameScreen.bSpeedMult > 1)
-            {
-                ballTimer++;
-                if(ballTimer > 600)
-                {
-                    GameScreen.bSpeedMult--;
-                }
-            }
-
-            if (GameScreen.pSpeedMult > 1)
-            {
-                paddleTimer++;
-                if (ballTimer > 600)
-                {
-                    GameScreen.pSpeedMult--;
-                }
-            }
-
-            if (GameScreen.scoreMult > 1)
-            {
-                scoreTimer++;
-                if (ballTimer > 600)
-                {
-                    GameScreen.scoreMult--; ;
-                }
-            }
-        }
-
         //move the power up down the screen
         public void Move()
         {
