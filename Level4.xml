@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level number ="4" name ="4 Times The Fun">
+  <brick x ="210" y ="147" hp ="1"/>
+  <brick x ="100" y ="147" hp ="1"/>
+  <brick x ="155" y ="147" hp ="1"/>
+  <brick x ="155" y ="90" hp ="1"/>
+  <brick x ="100" y ="90" hp ="1"/>
+  <brick x ="69" y ="130" hp ="2"/>
+  <brick x ="107" y ="108" hp ="2"/>
+  <brick x ="200" y ="200" hp ="4"/>
+  <brick x ="211" y ="211" hp ="5"/>
+  <brick x ="300" y ="47" hp ="2"/>
+  <brick x ="129" y ="47" hp ="1"/>
+  <brick x ="29" y ="27" hp ="1"/>
+  <brick x ="400" y ="47" hp ="1"/>
+  <brick x ="455" y ="47" hp ="3"/>
+  <brick x ="510" y ="47" hp ="3"/>
+  <brick x ="565" y ="47" hp ="3"/>
+  <brick x ="620" y ="47" hp ="3"/>
+</level>

@@ -1,13 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <highscore>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
-  <score></score>
+  <name>a</name>
+  <score>1</score>
+  <name>b</name>
+  <score>2</score>
+  <name>c</name>
+  <score>3</score>
+  <name>d</name>
+  <score>4</score>
+  <name>e</name>
+  <score>5</score>
+  <name>f</name>
+  <score>6</score>
+  <name>g</name>
+  <score>7</score>
+  <name>h</name>
+  <score>8</score>
+  <name>i</name>
+  <score>9</score>
+  <name>j</name>
+  <score>10</score>
 </highscore>

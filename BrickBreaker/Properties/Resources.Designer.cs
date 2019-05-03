@@ -61,6 +61,15 @@ namespace BrickBreaker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream backMusic {
+            get {
+                return ResourceManager.GetStream("backMusic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ball {
@@ -91,12 +100,39 @@ namespace BrickBreaker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream brickCollision {
+            get {
+                return ResourceManager.GetStream("brickCollision", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream collision {
+            get {
+                return ResourceManager.GetStream("collision", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream deathSound {
+            get {
+                return ResourceManager.GetStream("deathSound", resourceCulture);
             }
         }
         
@@ -123,12 +159,12 @@ namespace BrickBreaker.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;level number =&quot;1&quot; name =&quot;Level 1&quot;&gt;
-        ///  &lt;brick x =&quot;69&quot; y =&quot;47&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x=&quot;107&quot; y=&quot;47&quot; hp=&quot;1&quot;/&gt;
-        ///  &lt;brick  x=&quot;69&quot; y=&quot;90&quot; hp=&quot;1&quot;/&gt;
-        ///  &lt;brick  x=&quot;107&quot; y=&quot;90&quot; hp=&quot;1&quot;/&gt;
-        ///  &lt;brick  x=&quot;69&quot; y=&quot;137&quot; hp=&quot;2&quot;/&gt;
-        ///  &lt;brick  x=&quot;107&quot; y=&quot;137&quot; hp=&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;50&quot; y =&quot;47&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x=&quot;125&quot; y=&quot;47&quot; hp=&quot;1&quot;/&gt;
+        ///  &lt;brick  x=&quot;50&quot; y=&quot;90&quot; hp=&quot;1&quot;/&gt;
+        ///  &lt;brick  x=&quot;125&quot; y=&quot;90&quot; hp=&quot;1&quot;/&gt;
+        ///  &lt;brick  x=&quot;50&quot; y=&quot;137&quot; hp=&quot;2&quot;/&gt;
+        ///  &lt;brick  x=&quot;125&quot; y=&quot;137&quot; hp=&quot;2&quot;/&gt;
         ///  &lt;brick x=&quot;530&quot; y=&quot;47&quot; hp=&quot;1&quot;/&gt;
         ///  &lt;brick x=&quot;608&quot; y=&quot;47&quot; hp=&quot;1&quot;/&gt;
         ///  &lt;brick x=&quot;530&quot; y=&quot;90&quot; hp=&quot;1&quot;/&gt;
@@ -145,21 +181,22 @@ namespace BrickBreaker.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;level number=&quot;2&quot; name=&quot;&quot;&gt;
-        ///  &lt;brick x =&quot;12&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;68&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;124&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;12&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;180&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;236&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
+        ///&lt;level number=&quot;2&quot; name=&quot;5 x 2 = 10E&quot;&gt;
+        ///  &lt;brick x =&quot;266&quot; y =&quot;365&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;340&quot; y =&quot;365&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;365&quot; hp =&quot;1&quot;/&gt;
         ///
-        ///  &lt;brick x =&quot;523&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;579&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;635&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;691&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;747&quot; y =&quot;409&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;266&quot; y =&quot;317&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;340&quot; y =&quot;317&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;317&quot; hp =&quot;1&quot;/&gt;
         ///
-        ///  &lt;brick x =&quot;303&quot; y =&quot;286 [rest of string was truncated]&quot;;.
+        ///  &lt;brick x =&quot;266&quot; y =&quot;268&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;340&quot; y =&quot;268&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;268&quot; hp =&quot;2&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;266&quot; y =&quot;217&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;340&quot; y =&quot;217&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level2 {
             get {
@@ -170,23 +207,89 @@ namespace BrickBreaker.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///
-        ///&lt;level number =&quot;3&quot; name =&quot;John&quot;&gt;
-        ///  &lt;brick x =&quot;69&quot; y =&quot;47&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;107&quot; y =&quot;47&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;69&quot; y =&quot;90&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;107&quot; y =&quot;90&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;69&quot; y =&quot;130&quot; hp =&quot;2&quot;/&gt;
-        ///  &lt;brick x =&quot;107&quot; y =&quot;108&quot; hp =&quot;2&quot;/&gt;
-        ///  &lt;brick x =&quot;200&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
-        ///  &lt;brick x =&quot;211&quot; y =&quot;211&quot; hp =&quot;5&quot;/&gt;
-        ///  &lt;brick x =&quot;300&quot; y =&quot;147&quot; hp =&quot;2&quot;/&gt;
-        ///  &lt;brick x =&quot;129&quot; y =&quot;147&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;69&quot; y =&quot;147&quot; hp =&quot;1&quot;/&gt;
-        ///  &lt;brick x =&quot;29&quot; y =&quot;27&quot; h [rest of string was truncated]&quot;;.
+        ///&lt;level number =&quot;3&quot; name =&quot;This is Jimmy&quot;&gt;
+        ///  &lt;brick x =&quot;0&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;93&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;186&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;279&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;372&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;465&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;558&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;651&quot; y =&quot;200&quot; hp =&quot;4&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;0&quot; y =&quot;147&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;93&quot; y =&quot;147&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;186&quot; y =&quot;147&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level3 {
             get {
                 return ResourceManager.GetString("Level3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level number =&quot;4&quot; name =&quot;You are not Thayen&quot;&gt;
+        ///  &lt;brick x =&quot;223&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///  &lt;brick x =&quot;279&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///  &lt;brick x =&quot;335&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///  &lt;brick x =&quot;391&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///  &lt;brick x =&quot;447&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///  &lt;brick x =&quot;503&quot; y =&quot;193&quot; hp =&quot;3&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;103&quot; y =&quot;68&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;176&quot; y =&quot;68&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;36&quot; y =&quot;104&quot; hp =&quot;2&quot;/&gt;
+        ///  &lt;brick x =&quot;103&quot; y =&quot;104&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;176&quot; y =&quot;104&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;bric [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Level4 {
+            get {
+                return ResourceManager.GetString("Level4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level number =&quot;5&quot; name =&quot;This one&quot;&gt;
+        ///  &lt;brick x =&quot;12&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;68&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;124&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;12&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;180&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;236&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;523&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;579&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;635&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;691&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///  &lt;brick x =&quot;747&quot; y =&quot;349&quot; hp =&quot;1&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;30 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Level5 {
+            get {
+                return ResourceManager.GetString("Level5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lifeLost {
+            get {
+                return ResourceManager.GetStream("lifeLost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream paddleCollision {
+            get {
+                return ResourceManager.GetStream("paddleCollision", resourceCulture);
             }
         }
         
@@ -207,6 +310,15 @@ namespace BrickBreaker.Properties {
             get {
                 object obj = ResourceManager.GetObject("Player2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Powerup {
+            get {
+                return ResourceManager.GetStream("Powerup", resourceCulture);
             }
         }
         

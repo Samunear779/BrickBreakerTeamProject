@@ -17,7 +17,7 @@ namespace BrickBreaker
         {
             InitializeComponent();
         }
-        // wow !
+        // wow ! ;D
         private void Form1_Load(object sender, EventArgs e)
         {
              //Start the program centred on the Menu Screen

@@ -1,18 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<level number ="3" name ="John">
-  <brick x ="69" y ="47" hp ="1"/>
-  <brick x ="107" y ="47" hp ="1"/>
-  <brick x ="69" y ="90" hp ="1"/>
-  <brick x ="107" y ="90" hp ="1"/>
-  <brick x ="69" y ="130" hp ="2"/>
-  <brick x ="107" y ="108" hp ="2"/>
-  <brick x ="200" y ="200" hp ="4"/>
-  <brick x ="211" y ="211" hp ="5"/>
-  <brick x ="300" y ="147" hp ="2"/>
-  <brick x ="129" y ="147" hp ="1"/>
-  <brick x ="69" y ="147" hp ="1"/>
-  <brick x ="29" y ="27" hp ="1"/>
-  <brick x ="500" y ="147" hp ="1"/>
-  <brick x ="609" y ="147" hp ="3"/>
+<level number ="3" name ="This is Jimmy">
+  <brick x ="0" y ="200" hp ="4"/>
+  <brick x ="93" y ="200" hp ="4"/>
+  <brick x ="186" y ="200" hp ="4"/>
+  <brick x ="279" y ="200" hp ="4"/>
+  <brick x ="372" y ="200" hp ="4"/>
+  <brick x ="465" y ="200" hp ="4"/>
+  <brick x ="558" y ="200" hp ="4"/>
+  <brick x ="651" y ="200" hp ="4"/>
+
+  <brick x ="0" y ="147" hp ="2"/>
+  <brick x ="93" y ="147" hp ="2"/>
+  <brick x ="186" y ="147" hp ="2"/>
+  <brick x ="279" y ="147" hp ="2"/>
+  <brick x ="372" y ="147" hp ="2"/>
+  <brick x ="465" y ="147" hp ="2"/>
+  <brick x ="558" y ="147" hp ="2"/>
+  <brick x ="651" y ="147" hp ="2"/>
+
+  <brick x ="0" y ="47" hp ="3"/>
+  <brick x ="93" y ="47" hp ="3"/>
+  <brick x ="186" y ="47" hp ="3"/>
+  <brick x ="279" y ="47" hp ="3"/>
+  <brick x ="372" y ="47" hp ="3"/>
+  <brick x ="465" y ="47" hp ="3"/>
+  <brick x ="558" y ="47" hp ="3"/>
+  <brick x ="651" y ="47" hp ="3"/>
 </level>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level number ="4" name ="You are not Thayen">
+  <brick x ="223" y ="193" hp ="3"/>
+  <brick x ="279" y ="193" hp ="3"/>
+  <brick x ="335" y ="193" hp ="3"/>
+  <brick x ="391" y ="193" hp ="3"/>
+  <brick x ="447" y ="193" hp ="3"/>
+  <brick x ="503" y ="193" hp ="3"/>
+
+  <brick x ="103" y ="68" hp ="2"/>
+  <brick x ="176" y ="68" hp ="2"/>
+  <brick x ="36" y ="104" hp ="2"/>
+  <brick x ="103" y ="104" hp ="1"/>
+  <brick x ="176" y ="104" hp ="1"/>
+  <brick x ="36" y ="146" hp ="2"/>
+  <brick x ="103" y ="146" hp ="1"/>
+
+  <brick x ="544" y ="68" hp ="2"/>
+  <brick x ="613" y ="68" hp ="2"/>
+  <brick x ="678" y ="104" hp ="2"/>
+  <brick x ="544" y ="104" hp ="1"/>
+  <brick x ="613" y ="104" hp ="1"/>
+  <brick x ="678" y ="146" hp ="2"/>
+  <brick x ="613" y ="146" hp ="1"/>
+</level>

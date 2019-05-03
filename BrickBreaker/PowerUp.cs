@@ -11,10 +11,11 @@ namespace BrickBreaker
     {
         public int powerValue;
         public int x, y, powerSpeed, size;
+        public int ballTimer, paddleTimer, scoreTimer = 0;
         public Color colour;
 
         // create a random number generator 
-       
+
 
         public PowerUp(int _x, int _y, int _powerSpeed, int _size, int _powerValue)
         {
@@ -25,40 +26,72 @@ namespace BrickBreaker
             powerValue = _powerValue;
         }
 
-        public void PaddleCollision(Paddle p)
+        public Boolean PowerUpCollision(Paddle p)
         {
             Rectangle powerUpRec = new Rectangle(x, y, size, size);
             Rectangle paddleRec = new Rectangle(p.x, p.y, p.width, p.height);
 
-            if (powerUpRec.IntersectsWith(paddleRec))
+            return (powerUpRec.IntersectsWith(paddleRec));
+        }
+
+        public Color UpdatePowerUp()
+        {
+            switch (powerValue)
             {
-                switch (powerValue)
-                {
-                    case 1:
-                        GameScreen.bSpeedMult = GameScreen.bSpeedMult + 5;
-                        break;
-                    case 2:
-                        GameScreen.pSpeedMult = GameScreen.pSpeedMult + 5;
-                        break;
-                    case 3:
-                        GameScreen.scoreMult = GameScreen.scoreMult + 5;
-                        break;
-                    case 4:
-                        GameScreen.score = GameScreen.score + 2;
-                        break;
-                }
+                case 1:
+                    GameScreen.bSpeedMult = GameScreen.bSpeedMult + 1;
+                    return Color.Blue;
+                case 2:
+                    GameScreen.pSpeedMult = GameScreen.pSpeedMult + 1;
+                    return Color.Green;
+                case 3:
+                    GameScreen.scoreMult = GameScreen.scoreMult + 1;
+                    return Color.Red;
+                case 4:
+                    GameScreen.score = GameScreen.score + 2000;
+                    return Color.Pink;
+                case 5:
+                    GameScreen.score = GameScreen.lives++;
+                    return Color.White;
+                default:
+                    return Color.Yellow;
             }
         }
 
-        public Color UpdateColour()
+        public void PowerUpTimer()
         {
-           return Color.Blue;
+            if (GameScreen.bSpeedMult > 1)
+            {
+                ballTimer++;
+                if(ballTimer > 600)
+                {
+                    GameScreen.bSpeedMult--;
+                }
+            }
+
+            if (GameScreen.pSpeedMult > 1)
+            {
+                paddleTimer++;
+                if (ballTimer > 600)
+                {
+                    GameScreen.pSpeedMult--;
+                }
+            }
+
+            if (GameScreen.scoreMult > 1)
+            {
+                scoreTimer++;
+                if (ballTimer > 600)
+                {
+                    GameScreen.scoreMult--; ;
+                }
+            }
         }
 
         //move the power up down the screen
         public void Move()
         {
-            y = y - powerSpeed;
+            y = y + powerSpeed;
         }
     }
 }
