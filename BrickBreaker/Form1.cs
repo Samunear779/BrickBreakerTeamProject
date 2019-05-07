@@ -8,28 +8,63 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Media;
 
 namespace BrickBreaker
 {
     public partial class Form1 : Form
     {
-        public static bool twoPlayer = true; 
-        public Form1()
+		public static bool twoPlayer = true;
+		public static List<Score> highScores = new List<Score>();
+		public Form1()
         {
             InitializeComponent();
+			loadScores();
         }
+        
+        //Soundplayer for backMusic
+        public static SoundPlayer music = new SoundPlayer(Properties.Resources.backMusic);
+
         // wow ! ;D
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+             
              //Start the program centred on the Menu Screen
              MenuScreen ms = new MenuScreen();
              this.Controls.Add(ms);
 
              ms.Location = new Point((this.Width - ms.Width) / 2, (this.Height - ms.Height) / 2);
-
-
-            
         }
+
+		public static void loadScores()
+		{
+			#region Strings and ints
+			string score = null, name = null;
+			Score s = new Score(score, name);
+			#endregion
+
+			XmlReader reader = XmlReader.Create("Resources/HighScores.xml");
+
+			while (reader.Read())
+			{
+				if (reader.NodeType == XmlNodeType.Text)
+				{
+					//reader.ReadToFollowing("highscore");
+					//reader.ReadToNextSibling("name");
+				    s = new Score(score, name);
+					s.name = reader.ReadString();
+					reader.ReadToNextSibling("score");
+					s.score = reader.ReadString();
+
+					if (s.name != null)
+					{
+						highScores.Add(s);
+					}
+				}
+			}
+			reader.Close();
+		}
 
         public static void ChangeScreen(UserControl current, string next)
         {

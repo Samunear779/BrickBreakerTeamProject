@@ -54,6 +54,11 @@ namespace BrickBreaker
         Random randGen = new Random();
         int powerValue;
 
+        //Soundplayers
+        SoundPlayer dead = new SoundPlayer(Properties.Resources.lifeLost);
+        SoundPlayer power = new SoundPlayer(Properties.Resources.Powerup);
+        SoundPlayer bCollide = new SoundPlayer(Properties.Resources.brickCollision);
+
         #endregion
 
         public GameScreen()
@@ -65,6 +70,8 @@ namespace BrickBreaker
 
         public void OnStart()
         {
+            
+
             //reset score
             lives = 5;
             score = 0;
@@ -90,9 +97,15 @@ namespace BrickBreaker
             int xSpeed = 6;
             int ySpeed = 6;
             int ballSize = 20;
-            ball = new Ball(ballX, ballY, xSpeed, ySpeed, ballSize);
-            ballList.Add(ball);
-            
+
+            ballList.Add(new Ball(ballX, ballY, xSpeed, ySpeed, ballSize));
+ 
+
+            //Soundplayer
+            SoundPlayer music = new SoundPlayer(Properties.Resources.backMusic);
+
+
+
 
             NewLevel();
 
@@ -240,14 +253,16 @@ namespace BrickBreaker
                 foreach (PowerUp p in powers)
                 {
                     p.Move();
-                    if (p.PowerUpCollision(paddle))
+                    if (p.PowerUpCollision(paddle)||p.PowerUpCollision(paddle2))
                     {
+
                         p.UpdatePowerUp();
+
                         powers.Remove(powers[0]);
                         break;
                     }
                     //delete power up if it goes off the screen
-                    if (p.y > paddle.y + 10)
+                    if (p.y > paddle.y + 30)
                     {
                         powers.Remove(powers[0]);
                         break;
@@ -265,6 +280,7 @@ namespace BrickBreaker
                 {
                     if (b.BottomCollision(this))
                     {
+                        dead.Play();
                         ballList.Remove(b);
                     }
                 }
@@ -273,6 +289,7 @@ namespace BrickBreaker
                 {
                     if (b.BottomCollision(this))
                     {
+                        dead.Play();
                         lives--;
 
                         // Moves the ball back to origin
@@ -287,6 +304,7 @@ namespace BrickBreaker
 
                         if (lives == 0)
                         {
+                            dead.Play();
                             gameTimer.Enabled = false;
                             OnEnd();
                         }
@@ -296,6 +314,7 @@ namespace BrickBreaker
 
             if (ballList.Count() == 0)
             {
+                dead.Play();
                 lives--;
 
                 // Moves the ball back to origin
@@ -316,6 +335,7 @@ namespace BrickBreaker
 
                 if (lives == 0)
                 {
+                    dead.Play();
                     gameTimer.Enabled = false;
                     OnEnd();
                 }
@@ -332,6 +352,7 @@ namespace BrickBreaker
             {
                 if (ball.BlockCollision(b))
                 {
+                    bCollide.Play();
                     --b.hp;
                     //blocks.Remove(b);
                     int blockX = b.x;
@@ -447,8 +468,10 @@ namespace BrickBreaker
                 e.Graphics.DrawImage(Properties.Resources.Player2, paddle2.x, paddle2.y);
             }
             //Draw Ball
-            e.Graphics.DrawImage(Properties.Resources.ball, ball.x, ball.y);
-
+            foreach (Ball b in ballList)
+            {
+                e.Graphics.DrawImage(Properties.Resources.ball, b.x, b.y);
+            }
             // Draws blocks
             foreach (Block b in blocks)
             {

@@ -7,16 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace BrickBreaker
 {
     public partial class MenuScreen : UserControl
     {
-       
+
+        SoundPlayer music = new SoundPlayer(Properties.Resources.backMusic);
+
         public MenuScreen()
         {
             InitializeComponent();
             lorenAllignment();
+            music.PlayLooping();
+           
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -26,6 +31,7 @@ namespace BrickBreaker
 
         private void playButton_Click(object sender, EventArgs e)
         {
+            music.Stop();
             // Goes to the game screen  
             Form1.ChangeScreen(this,"GameScreen");
         }
