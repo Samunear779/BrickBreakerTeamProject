@@ -42,6 +42,9 @@ namespace BrickBreaker
                 case 5:
                     colour = Color.White;
                     break;
+                case 6:
+                    colour = Color.Orange;
+                    break;
                 default:
                     colour = Color.Yellow;
                     break;
@@ -73,11 +76,23 @@ namespace BrickBreaker
                     GameScreen.score = GameScreen.score + 2000;
                     break;
                 case 5:
-                    GameScreen.score = GameScreen.lives++;
+                    GameScreen.lives = GameScreen.lives++;
+                    break;
+                case 6:
+                    GameScreen.CreateBall = true;
+                    break;
+                case 7:
                     break;
                 default:
                     break;
             }
+        }
+
+        public void ResetPowerUp()
+        {
+            GameScreen.bSpeedMult = 1;
+            GameScreen.pSpeedMult = 1;
+            GameScreen.scoreMult = 1;
         }
 
         //move the power up down the screen

@@ -34,6 +34,7 @@ namespace BrickBreaker
         public static int bSpeedMult = 1;
         public static int pSpeedMult = 1;
         public static int scoreMult = 1;
+        public static Boolean CreateBall;
 
         Font scoreFont = new Font("OCR A std", 14, FontStyle.Regular);
         SolidBrush scoreBrush = new SolidBrush(Color.Cyan);
@@ -368,6 +369,11 @@ namespace BrickBreaker
                 }
             }
 
+            //create a new ball if you get that power up yo 
+            if(CreateBall)
+            {
+                ballList.Add(new Ball(200, 200, 6, 6, 20));
+            }
             //Write lives/score
             lifelabel.Text = "Lives: " + lives;
             scoreLabel.Text = "Score: " + score;
@@ -426,8 +432,9 @@ namespace BrickBreaker
 
         public void NumberGen()
 
-        {          
-            powerValue = randGen.Next(1, 6);
+        {
+            //powerValue = randGen.Next(1, 6);
+            powerValue = 6;
         }
 
         public void GameScreen_Paint(object sender, PaintEventArgs e)
