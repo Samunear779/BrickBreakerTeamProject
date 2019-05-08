@@ -97,8 +97,7 @@ namespace BrickBreaker
             int xSpeed = 6;
             int ySpeed = 6;
             int ballSize = 20;
-
-            ballList.Add(new Ball(ballX, ballY, xSpeed, ySpeed, ballSize));
+            ballList.Add(ball = new Ball(ballX, ballY, xSpeed, ySpeed, ballSize));
  
 
             //Soundplayer
@@ -106,7 +105,7 @@ namespace BrickBreaker
 
 
 
-
+            //
             NewLevel();
 
             // start the game engine loop

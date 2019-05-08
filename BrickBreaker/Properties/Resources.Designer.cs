@@ -276,6 +276,29 @@ namespace BrickBreaker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level number =&quot;6&quot; name =&quot;Godzilla&quot;&gt;
+        ///  &lt;brick x =&quot;301&quot; y =&quot;401&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;357&quot; y =&quot;401&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;401&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;301&quot; y =&quot;370&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;370&quot; hp =&quot;4&quot;/&gt;
+        ///
+        ///  &lt;brick x =&quot;245&quot; y =&quot;339&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;301&quot; y =&quot;339&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;357&quot; y =&quot;339&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;413&quot; y =&quot;339&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;469&quot; y =&quot;339&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;495&quot; y =&quot;308&quot; hp =&quot;4&quot;/&gt;
+        ///  &lt;brick x =&quot;5 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Level6 {
+            get {
+                return ResourceManager.GetString("Level6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream lifeLost {

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level number ="6" name ="Godzilla">
+  <brick x ="301" y ="401" hp ="4"/>
+  <brick x ="357" y ="401" hp ="4"/>
+  <brick x ="413" y ="401" hp ="4"/>
+  <brick x ="301" y ="370" hp ="4"/>
+  <brick x ="413" y ="370" hp ="4"/>
+
+  <brick x ="245" y ="339" hp ="4"/>
+  <brick x ="301" y ="339" hp ="4"/>
+  <brick x ="357" y ="339" hp ="4"/>
+  <brick x ="413" y ="339" hp ="4"/>
+  <brick x ="469" y ="339" hp ="4"/>
+  <brick x ="495" y ="308" hp ="4"/>
+  <brick x ="551" y ="308" hp ="4"/>
+
+  <brick x ="245" y ="298" hp ="4"/>
+  <brick x ="245" y ="258" hp ="4"/>
+  <brick x ="245" y ="218" hp ="4"/>
+  <brick x ="245" y ="177" hp ="4"/>
+
+  <brick x ="278" y ="125" hp ="4"/>
+  <brick x ="334" y ="125" hp ="4"/>
+  <brick x ="390" y ="135" hp ="4"/>
+  <brick x ="446" y ="149" hp ="4"/>
+  <brick x ="495" y ="180" hp ="4"/>
+  <brick x ="551" y ="180" hp ="4"/>
+
+  <brick x ="390" y ="170" hp ="2"/>
+  <brick x ="334" y ="201" hp ="2"/>
+  <brick x ="446" y ="201" hp ="2"/>
+  <brick x ="390" y ="232" hp ="2"/>
+  <brick x ="390" y ="201" hp ="3"/>
+
+  <brick x ="520" y ="244" hp ="1"/>
+  <brick x ="593" y ="244" hp ="1"/>
+  <brick x ="646" y ="201" hp ="1"/>
+  <brick x ="704" y ="149" hp ="1"/>
+  <brick x ="646" y ="288" hp ="1"/>
+  <brick x ="704" y ="321" hp ="1"/>
+</level>

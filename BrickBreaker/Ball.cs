@@ -7,6 +7,7 @@ namespace BrickBreaker
 {
     public class Ball
     {
+        Boolean angle1, angle2;
         public int x, y, xSpeed, ySpeed, size;
         public Color colour;
 
@@ -75,8 +76,17 @@ namespace BrickBreaker
 
         public void PaddleCollision(Paddle p, bool pMovingLeft, bool pMovingRight)
         {
+            int midX = x + (size / 2);
+
             Rectangle ballRec = new Rectangle(x, y, size, size);
             Rectangle paddleRec = new Rectangle(p.x, p.y, p.width, p.height);
+
+            Rectangle paddleRec1 = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle paddleRec2 = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle paddleRec3 = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle paddleRec4 = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle paddleRec5 = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle paddleRec6 = new Rectangle(p.x, p.y, p.width, p.height);
 
             if (ballRec.IntersectsWith(paddleRec))
             {
