@@ -19,7 +19,7 @@ namespace BrickBreaker
         public MenuScreen()
         {
             InitializeComponent();
-            lorenAllignment();
+            lorenAlignment();
             music.PlayLooping();
            
         }
@@ -36,7 +36,7 @@ namespace BrickBreaker
             Form1.ChangeScreen(this,"GameScreen");
         }
 
-        private void lorenAllignment()
+        private void lorenAlignment()
         {
             playButton.Location = new Point((this.Width - playButton.Width) / 2, 240);            
             exitButton.Location = new Point((this.Width - exitButton.Width) / 2, 400);
@@ -65,6 +65,18 @@ namespace BrickBreaker
         private void highButton_Click(object sender, EventArgs e)
         {
             Form1.ChangeScreen(this, "HighScreen");
+        }
+
+        private void coopBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (coopBox.Checked == true)
+            {
+                Form1.twoPlayer = true;
+            }
+            else
+            {
+                Form1.twoPlayer = false;
+            }
         }
     }
 }

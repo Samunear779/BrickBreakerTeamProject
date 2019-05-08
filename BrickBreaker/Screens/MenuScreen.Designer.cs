@@ -35,6 +35,7 @@
             this.nameButton = new System.Windows.Forms.Button();
             this.highButton = new System.Windows.Forms.Button();
             this.showDebug = new System.Windows.Forms.CheckBox();
+            this.coopBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // playButton
@@ -144,7 +145,19 @@
             this.showDebug.TabIndex = 6;
             this.showDebug.Text = "Show Debug Shortcuts";
             this.showDebug.UseVisualStyleBackColor = false;
-            //this.showDebug.CheckedChanged += new System.EventHandler(this.showDebug_CheckedChanged);
+            // 
+            // coopBox
+            // 
+            this.coopBox.AutoSize = true;
+            this.coopBox.BackColor = System.Drawing.Color.Transparent;
+            this.coopBox.ForeColor = System.Drawing.Color.Cyan;
+            this.coopBox.Location = new System.Drawing.Point(493, 317);
+            this.coopBox.Name = "coopBox";
+            this.coopBox.Size = new System.Drawing.Size(92, 17);
+            this.coopBox.TabIndex = 7;
+            this.coopBox.Text = "2-Player Coop";
+            this.coopBox.UseVisualStyleBackColor = false;
+            this.coopBox.CheckedChanged += new System.EventHandler(this.coopBox_CheckedChanged);
             // 
             // MenuScreen
             // 
@@ -153,6 +166,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::BrickBreaker.Properties.Resources.Stars;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Controls.Add(this.coopBox);
             this.Controls.Add(this.showDebug);
             this.Controls.Add(this.highButton);
             this.Controls.Add(this.nameButton);
@@ -177,6 +191,7 @@
         private System.Windows.Forms.Button nameButton;
         private System.Windows.Forms.Button highButton;
         private System.Windows.Forms.CheckBox showDebug;
+        private System.Windows.Forms.CheckBox coopBox;
     }
 
 }
