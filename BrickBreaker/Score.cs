@@ -8,13 +8,13 @@ namespace BrickBreaker
 {
 	public class Score
 	{
-		public string score = null;
+		public int score = 0;
 		public string name = null;
 
-		public Score(string _score, string _name)
+		public Score(string _name, int _score)
 		{
-			score = _score;
 			name = _name;
+			score = _score;
 		}
 	}
 }

@@ -82,16 +82,6 @@ namespace BrickBreaker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blueBrick {
-            get {
-                object obj = ResourceManager.GetObject("blueBrick", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap blueBrick2 {
             get {
                 object obj = ResourceManager.GetObject("blueBrick2", resourceCulture);
@@ -133,16 +123,6 @@ namespace BrickBreaker.Properties {
         internal static System.IO.UnmanagedMemoryStream deathSound {
             get {
                 return ResourceManager.GetStream("deathSound", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Green_Brick {
-            get {
-                object obj = ResourceManager.GetObject("Green_Brick", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -348,16 +328,6 @@ namespace BrickBreaker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap purpBrick {
-            get {
-                object obj = ResourceManager.GetObject("purpBrick", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap purpBrick2 {
             get {
                 object obj = ResourceManager.GetObject("purpBrick2", resourceCulture);
@@ -371,16 +341,6 @@ namespace BrickBreaker.Properties {
         internal static System.Drawing.Bitmap purpbutton {
             get {
                 object obj = ResourceManager.GetObject("purpbutton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap redBrick {
-            get {
-                object obj = ResourceManager.GetObject("redBrick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

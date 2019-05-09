@@ -39,7 +39,7 @@ namespace BrickBreaker
 		{
 //			Form1.highScores.Sort();
 			highScores.Text = "";
-			for (int i = 0; i < 10; i++)
+			for (int i = 0; i < 9; i++)
 			{
 				highScores.Text += i + ". " + Form1.highScores[i].name + " - " + Form1.highScores[i].score + "\n" + "\n";
 			}	

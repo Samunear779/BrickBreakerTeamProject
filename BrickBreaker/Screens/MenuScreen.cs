@@ -38,7 +38,8 @@ namespace BrickBreaker
 
         private void lorenAlignment()
         {
-            playButton.Location = new Point((this.Width - playButton.Width) / 2, 240);            
+            playButton.Location = new Point((this.Width - playButton.Width) / 2, 240);
+            coopBox.Location = new Point((this.Width - playButton.Width) / 2 + 40, 240);
             exitButton.Location = new Point((this.Width - exitButton.Width) / 2, 400);
             title.Location = new Point((this.Width - title.Width) / 2, 130);
         }

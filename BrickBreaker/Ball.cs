@@ -25,6 +25,11 @@ namespace BrickBreaker
             ySpeed = _ySpeed;
             size = _ballSize;
 
+            if (Form1.twoPlayer)
+            {
+                xSpeed++;
+                ySpeed++;
+            }
         }
 
         public void Move()

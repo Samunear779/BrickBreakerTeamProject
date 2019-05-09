@@ -23,7 +23,7 @@ namespace BrickBreaker
         }
         
         //Soundplayer for backMusic
-        public static SoundPlayer music = new SoundPlayer(Properties.Resources.backMusic);
+//        public static SoundPlayer music = new SoundPlayer(Properties.Resources.backMusic);
 
         // wow ! ;D
         private void Form1_Load(object sender, EventArgs e)
@@ -40,8 +40,9 @@ namespace BrickBreaker
 		public static void loadScores()
 		{
 			#region Strings and ints
-			string score = null, name = null;
-			Score s = new Score(score, name);
+			int score = 0;
+			string name = null;
+			Score s = new Score(name, score);
 			#endregion
 
 			XmlReader reader = XmlReader.Create("Resources/HighScores.xml");
@@ -52,10 +53,10 @@ namespace BrickBreaker
 				{
 					//reader.ReadToFollowing("highscore");
 					//reader.ReadToNextSibling("name");
-				    s = new Score(score, name);
+				    s = new Score(name, score);
 					s.name = reader.ReadString();
 					reader.ReadToNextSibling("score");
-					s.score = reader.ReadString();
+					s.score = Convert.ToInt16(reader.ReadString());
 
 					if (s.name != null)
 					{
