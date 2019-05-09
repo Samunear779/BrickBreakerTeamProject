@@ -453,8 +453,7 @@ namespace BrickBreaker
         public void NumberGen()
 
         {
-            //powerValue = randGen.Next(1, 6);
-            powerValue = 6;
+            powerValue = randGen.Next(1, 6);
         }
 
         public void GameScreen_Paint(object sender, PaintEventArgs e)
